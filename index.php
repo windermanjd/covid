@@ -1,4 +1,10 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
+
 $dataset = json_decode(file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all"),true);
 if(isset($_GET["act"])){
 if($_GET["act"]=="save"){
