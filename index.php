@@ -45,8 +45,8 @@ $sToken = $_POST["token"];
 
 $sMessage ="จำนวนผู้ติดโควิดประจำวันที่ : ".$dataset["txn_date"]."\n";
 $sMessage .="ผู้ติดเชื้อใหม่ : ".$dataset["new_case"]."\n";
-$sMessage .="เสียชีวิตวันนี้ : ".$dataset["new_death"]."\n";
-$sMessage .="เสียชีวิตรวม : ".$dataset["total_death"]."\n";
+$sMessage .="ผู้เสียชีวิตวันนี้ : ".$dataset["new_death"]."\n";
+$sMessage .="ผู้เสียชีวิตรวม : ".$dataset["total_death"]."\n";
 $sMessage .="ผู้ป่วยสะสมทั้งหมด : ".$dataset["total_case"]."\n";
 
 $chOne = curl_init(); 
@@ -119,9 +119,9 @@ $sToken = $data[$i]["token"];
 
 $sMessage ="จำนวนผู้ติดโควิดประจำวันที่ : ".$dataset["txn_date"]."\n";
 $sMessage .="ผู้ติดเชื้อใหม่ : ".$dataset["new_case"]."\n";
-$sMessage .="เสียชีวิตวันนี้ : ".$dataset["new_death"]."\n";
-$sMessage .="เสียชีวิตรวม : ".$dataset["total_death"]."\n";
-$sMessage .="ผู้ป่วยสะสมทั้งหมด : ".$dataset["total_case"]."\n";
+$sMessage .="ผู้เสียชีวิตวันนี้ : ".$dataset["new_death"]."\n";
+$sMessage .="ผู้เสียชีวิตรวม : ".$dataset["total_death"]."\n";
+$sMessage .="ผู้ผู้ป่วยสะสมทั้งหมด : ".$dataset["total_case"]."\n";
 
 $chOne = curl_init(); 
 
