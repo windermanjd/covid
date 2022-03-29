@@ -119,8 +119,8 @@ $sToken = $data[$i]["token"];
 
 $sMessage ="จำนวนผู้ติดโควิดประจำวันที่ : ".$dataset["txn_date"]."\n";
 $sMessage .="ผู้ติดเชื้อใหม่ : ".$dataset["new_case"]."\n";
-$sMessage .="ตายวันนี้ : ".$dataset["new_death"]."\n";
-$sMessage .="ตายรวม : ".$dataset["total_death"]."\n";
+$sMessage .="ดสียชีวิตวันนี้ : ".$dataset["new_death"]."\n";
+$sMessage .="เสียชีวิตรวม : ".$dataset["total_death"]."\n";
 $sMessage .="ผู้ป่วยสะสมทั้งหมด : ".$dataset["total_case"]."\n";
 
 $chOne = curl_init(); 
