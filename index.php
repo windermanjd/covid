@@ -167,9 +167,9 @@ curl_close( $chOne );
 }
 
 
-$myfile = fopen("db.json", "w") or die("Unable to open file!");
-fwrite($myfile, json_encode($data));
-fclose($myfile);
+$datafile = fopen("db.json", "w") or die("Unable to open file!");
+fwrite($datafile, json_encode($data));
+fclose($datafile);
 echo json_encode(array("statusCode"=>200));
 
 }
